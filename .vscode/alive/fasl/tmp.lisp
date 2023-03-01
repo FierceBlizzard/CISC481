@@ -3,7 +3,6 @@
                        (4 6 8)))
 
 (defun possible-actions (puzzle)
-    (list :left :right :up :down :nrow :ncol)
     (dotimes (row 3)
         (dotimes (col 3)
             (when 
