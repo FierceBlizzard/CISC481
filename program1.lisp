@@ -1,13 +1,18 @@
 (defvar *puzzle-0*'((3 1 2)
                        (7 nil 5)
                        (4 6 8)))
-
+(defvar *goal*'((nil 1 2)
+                (3 4 5)
+                (6 7 8)))
 (let ((rowN 0)
         (colN 0)
         (temp 0)
         possAct)
     (setq possAct '())
   )
+(defun expand (possAct)
+    (puzzle)
+)
 (defun possible-actions (puzzle)
     (dotimes (row 3)
         (dotimes (col 3)
@@ -37,7 +42,8 @@
 (defun result (puzzle action)
     (cond 
         ;;movement for going left and right
-        ((eq action :right) ((setq temp (aref puzzle (colN (+ rowN 1))))
+        ((eq action :right) (
+                            (setq temp (aref puzzle (colN (+ rowN 1))))
                             (setq (aref puzzle colN rowN) temp)
                             (setq (aref puzzle colN (+ rowN 1)) nil)
                             )
