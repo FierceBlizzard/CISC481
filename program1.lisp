@@ -4,15 +4,18 @@
 (defvar *goal* #2A  ((nil 1 2)
                      (3 4 5)
                      (6 7 8)))
-(let ((rowN 0)
-        (colN 0)
-        (temp 0)
-        possAct)
-    (setf possAct '())
-  )
+(defvar colN 0)
+(defvar rowN 0)
+(list :state puzzle
+      :parent curr
+      action
+      :path-cost 0
+)
+
 (defun possible-actions (puzzle)
-    (dotimes (row 3)
-        (dotimes (col 3)
+    (setf possAct '())
+    (dotimes (row 2)
+        (dotimes (col 2)
             (when 
                 (null (aref puzzle))
             (setf rowN row)
@@ -64,10 +67,16 @@
     )
     (puzzle)
 )
-(defun iterative-search (puzzle possAct)
-    (setf cap 0)
-    ()
+(defun expand (puzzle action)
+    (result puzzle action)
 )
-(result *puzzle-0*)
+;;
+(defun iterative-search (puzzle)
+    (setf end 2)
+    (setf start 1)
+    (setf numIter 1)
+    (setf winner_path '())
+    (setf currPuzzle puzzle)
+)
 (write *puzzle-0*)
 (pprint iterative-search)
