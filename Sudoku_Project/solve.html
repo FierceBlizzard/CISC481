@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <style>
+      table {
+          border: 3px solid black;
+          border-collapse: collapse;
+      } tr {
+          padding: 0;
+      } td {
+          width: 64px;
+          height: 64px;
+          padding: 0;
+          border: 1px solid gray;
+          text-align: center;
+          vertical-align: center;
+          font-size: 1.5em;
+      } input {
+          font-size: 1em;
+      } tr.box-bottom td {
+          border-bottom: 3px solid black;
+      } td.box-side {
+          border-right: 3px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>JR's Sudoku Solver</h1>
+    <form action="/solve" method="POST">
+    <table>
+      <tbody><tr>
+        <!-- 1st row -->  
+        <td>{{ solution["C11"] }}</td>
+        <td>{{ solution["C12"] }}</td>
+        <td class="box-side">{{ solution["C13"] }}</td>
+        <td>{{ solution["C14"] }}</td>
+        <td>{{ solution["C15"] }}</td>
+        <td class="box-side">{{ solution["C16"] }}</td>
+        <td>{{ solution["C17"] }}</td>
+        <td>{{ solution["C18"] }}</td>
+        <td>{{ solution["C19"] }}</td>
+      </tr>
+
+      <!-- 2nd row --> 
+      <tr>
+        <td>{{ solution["C21"] }}</td>
+        <td>{{ solution["C22"] }}</td>
+        <td class="box-side">{{ solution["C23"] }}</td>
+        <td>{{ solution["C24"] }}</td>
+        <td>{{ solution["C25"] }}</td>
+        <td class="box-side">{{ solution["C26"] }}</td>
+        <td>{{ solution["C27"] }}</td>
+        <td>{{ solution["C28"] }}</td>
+        <td>{{ solution["C29"] }}</td>
+      </tr>
+
+      <!-- 3rd row --> 
+      <tr>
+        <td>{{ solution["C31"] }}</td>
+        <td>{{ solution["C32"] }}</td>
+        <td class="box-side">{{ solution["C33"] }}</td>
+        <td>{{ solution["C34"] }}</td>
+        <td>{{ solution["C35"] }}</td>
+        <td class="box-side">{{ solution["C36"] }}</td>
+        <td>{{ solution["C37"] }}</td>
+        <td>{{ solution["C38"] }}</td>
+        <td>{{ solution["C39"] }}</td>
+      </tr>
+      
+      <!-- 4th row --> 
+      <tr>
+        <td>{{ solution["C41"] }}</td>
+        <td>{{ solution["C42"] }}</td>
+        <td class="box-side">{{ solution["C43"] }}</td>
+        <td>{{ solution["C44"] }}</td>
+        <td>{{ solution["C45"] }}</td>
+        <td class="box-side">{{ solution["C46"] }}</td>
+        <td>{{ solution["C47"] }}</td>
+        <td>{{ solution["C48"] }}</td>
+        <td>{{ solution["C49"] }}</td>
+      </tr>
+
+      <!-- 5th row --> 
+      <tr>
+        <td>{{ solution["C51"] }}</td>
+        <td>{{ solution["C52"] }}</td>
+        <td class="box-side">{{ solution["C53"] }}</td>
+        <td>{{ solution["C54"] }}</td>
+        <td>{{ solution["C55"] }}</td>
+        <td class="box-side">{{ solution["C56"] }}</td>
+        <td>{{ solution["C57"] }}</td>
+        <td>{{ solution["C58"] }}</td>
+        <td>{{ solution["C59"] }}</td>
+      </tr>
+
+      <!-- 6th row --> 
+      <tr class="box-bottom">
+        <td>{{ solution["C61"] }}</td>
+        <td>{{ solution["C62"] }}</td>
+        <td class="box-side">{{ solution["C63"] }}</td>
+        <td>{{ solution["C64"] }}</td>
+        <td>{{ solution["C65"] }}</td>
+        <td class="box-side">{{ solution["C66"] }}</td>
+        <td>{{ solution["C67"] }}</td>
+        <td>{{ solution["C68"] }}</td>
+        <td>{{ solution["C69"] }}</td>
+      </tr>
+
+      <!-- 7th row --> 
+      <tr>
+        <td>{{ solution["C71"] }}</td>
+        <td>{{ solution["C72"] }}</td>
+        <td class="box-side">{{ solution["C73"] }}</td>
+        <td>{{ solution["C74"] }}</td>
+        <td>{{ solution["C75"] }}</td>
+        <td class="box-side">{{ solution["C76"] }}</td>
+        <td>{{ solution["C77"] }}</td>
+        <td>{{ solution["C78"] }}</td>
+        <td>{{ solution["C79"] }}</td>
+      </tr>
+
+      <!-- 8th row --> 
+      <tr>
+        <td>{{ solution["C81"] }}</td>
+        <td>{{ solution["C82"] }}</td>
+        <td class="box-side">{{ solution["C83"] }}</td>
+        <td>{{ solution["C84"] }}</td>
+        <td>{{ solution["C85"] }}</td>
+        <td class="box-side">{{ solution["C86"] }}</td>
+        <td>{{ solution["C87"] }}</td>
+        <td>{{ solution["C88"] }}</td>
+        <td>{{ solution["C89"] }}</td>
+      </tr>
+
+      <!-- 9th row --> 
+      <tr class="box-bottom">
+        <td>{{ solution["C91"] }}</td>
+        <td>{{ solution["C92"] }}</td>
+        <td class="box-side">{{ solution["C93"] }}</td>
+        <td>{{ solution["C94"] }}</td>
+        <td>{{ solution["C95"] }}</td>
+        <td class="box-side">{{ solution["C96"] }}</td>
+        <td>{{ solution["C97"] }}</td>
+        <td>{{ solution["C98"] }}</td>
+        <td>{{ solution["C99"] }}</td>
+      </tr>
+    </tbody></table>
+    </form>
+    <button> Solve </button>
+  </body>
+</html>
