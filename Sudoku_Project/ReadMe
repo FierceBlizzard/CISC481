@@ -1,0 +1,22 @@
+To run the project in your designated operating system
+please copy paste the following commands. We do hope you have the 
+flask library downloaded
+
+Mac/Unix System:
+FLASK_APP=sudoku.py flask run
+
+OR 
+
+export FLASK_APP=sudoku.py
+flask run
+
+Windows Windows:
+$env:FLASK_APP=sudoku.py
+flask run
+
+OR
+
+$env:FLASK_APP=sudoku.py
+python -m flask run
+
+Have fun solving all the sudoku problems your heart desires
